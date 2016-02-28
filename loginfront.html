@@ -9,7 +9,8 @@
     <body>
         <div class="container">
             <form>
-                <input id="your_name" type="text" name="your_name" value="{% csrf_token %}">
+                {% csrf_token %}
+                <input id="your_name" type="text" name="your_user" value="{{ form.as_p}}">
                 <input id="your_name" type="text" name="your_pword" value="{{ form.as_p}}">
                 <input type="submit" value="Submit" class="btn btn-primary">
             </form>
