@@ -8,10 +8,12 @@
     </head>
     <body>
         <div class="container">
-            <form>
+            <form action="" mehtod="post">
                 {% csrf_token %}
-                <input id="your_name" type="text" name="your_user" value="{{ form.as_p}}">
-                <input id="your_name" type="text" name="your_pword" value="{{ form.as_p}}">
+                <label for="form.username"></label>
+                <input id="form.username" type="text" name="form.username" value="{{ form.as_p}}">
+                <label for="form.passord"></label>
+                <input id="form.passord" type="text" name="form.password" value="{{ form.as_p}}">
                 <input type="submit" value="Submit" class="btn btn-primary">
             </form>
         </div>
