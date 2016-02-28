@@ -11,9 +11,9 @@
             <form action="" mehtod="post">
                 {% csrf_token %}
                 <label for="my_use"></label>
-                <div id="my_use">{{form.username}}</div>
+                <div name="my_use">{{form.username}}</div>
                 <label for="my_pass"></label>
-                <div id="my_pass">{{form.password}}</div>
+                <div name="my_pass">{{form.password}}</div>
                 <input type="submit" value="Submit" class="btn btn-primary">
             </form>
         </div>
