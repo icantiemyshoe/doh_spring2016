@@ -10,9 +10,9 @@
         <div class="container">
             <form action="" mehtod="post">
                 {% csrf_token %}
-                <label for="my_use"></label>
+                <label for="my_use">Username: </label>
                 <div name="my_use">{{form.username}}</div>
-                <label for="my_pass"></label>
+                <label for="my_pass">Password: </label>
                 <div name="my_pass">{{form.password}}</div>
                 <input type="submit" value="Submit" class="btn btn-primary">
             </form>
