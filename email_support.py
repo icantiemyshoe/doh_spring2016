@@ -3,6 +3,9 @@
 # Import smtplib for the actual sending function
 import smtplib
 
+# Here is where you set up the location to the server. 
+smtpObj = smtplib.SMTP( [host [, port [, local_hostname]]] )
+
 # Import the email modules we'll need
 from email.mime.text import MIMEText
 

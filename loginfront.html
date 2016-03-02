@@ -5,6 +5,9 @@
         <link href="{% static 'css/borders.css' %}" rel="stylesheet" media="screen">
         <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
         <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'bootstrap/js/npm.js' %}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -17,5 +20,48 @@
                 <input type="submit" value="Submit" class="btn btn-primary">
             </form>
         </div>
+        
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                Collapsible Group 1</a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat.</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                Our Location</a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                        <div class="embed-responsive embed-responsive-16by9">            
+                          <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.0830446704863!2d-157.8580001490727!3d21.30773468577839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006ddf9478fb13%3A0x5e5ff3b0b73fa1ae!2s1250+Punchbowl+St%2C+Honolulu%2C+HI+96813!5e0!3m2!1sen!2sus!4v1444686688383" width="633" height="300" style="border:0" allowfullscreen></iframe>
+                        </div><br>  
+                    
+                          Hawaii State Department of Health
+                          <br>
+                           Immunization Branch
+                          <br>
+                          1250 Punchbowl Street
+                          <br>
+                          Honolulu, HI 96813
+                           <br>
+                          Phone:&nbsp;(808) 586-8331
+                          <br>
+                          Email:&nbsp;<a href="mailto:immunization@doh.hawaii.gov">immunization@doh.hawaii.gov</a>
+                    </div>
+            </div>
+          </div>
     </body>
 </html>
